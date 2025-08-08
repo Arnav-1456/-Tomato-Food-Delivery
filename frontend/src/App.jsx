@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Navbar from "./component/Navigation/Navbar"
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes,} from "react-router-dom"
 import Cart from "./pages/Cart/Cart"
 import Home from "./pages/Home/Home"
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder"
