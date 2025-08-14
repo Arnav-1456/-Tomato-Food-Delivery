@@ -1,11 +1,13 @@
 import { createContext, useEffect, useState } from "react";
-import { food_list } from "../assets/assets";
+ import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000"
+  //const url = "http://localhost:4000"
+  const url = "http://tomato-food-delivery-2.onrender.com"
   const [token, setToken] = useState("")
   const [food_list, setFoodList] = useState([]);
   const addToCart = async(itemId) => {
