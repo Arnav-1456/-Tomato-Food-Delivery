@@ -1,6 +1,8 @@
 import orderModel from "../model/orderModel.js";
 import userModel from "../model/userModel.js";
 import Stripe from "stripe";
+ 
+
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
  
  const placeOrder = async (req, res) => {
@@ -53,7 +55,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 const verifyOrder = async (req, res) => {
   const { orderId, success } = req.body;
   try {
-    if (success == "true") {
+    if (success === "true") {
       await orderModel.findByIdAndUpdate(orderId, { payment: true });
       res.json({ success: true, message: "Paid" });
     } else {

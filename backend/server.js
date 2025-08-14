@@ -1,9 +1,11 @@
 import express from "express"
 import cors from "cors"
+import "dotenv/config";
 import { connectDB } from "./config/db.js";
 import foodRouter from "./routes/foodRoute.js";
 import userRouter from "./routes/userRoutes.js";
-import 'dotenv/config.js'
+
+console.log('Stripe Key:', process.env.STRIPE_SECRET_KEY);
 import cartRouter from "./routes/cartRoutes.js";
 import orderRouter from "./routes/orderRoutes.js";
 const app = express();
