@@ -4,7 +4,7 @@ This repository hosts the source code for TOMATO, a dynamic food ordering websit
 
 ## Demo
 
-- User Panel: [https://food-delivery-frontend-s2l9.onrender.com/](https://food-delivery-frontend-s2l9.onrender.com/)
+- User Panel: [https://tomato-food-delivery-s57w.vercel.app/](https://tomato-food-delivery-s57w.vercel.app/)
 - Admin Panel: [https://food-delivery-admin-wrme.onrender.com/](https://food-delivery-admin-wrme.onrender.com/)
 
 ## Features
@@ -46,7 +46,7 @@ This repository hosts the source code for TOMATO, a dynamic food ordering websit
 Clone the project
 
 ```bash
-    git clone https://github.com/Mshandev/Food-Delivery
+    git clone https://github.com/Arnav-1456/-Tomato-Food-Delivery.git
 ```
 Go to the project directory
 
@@ -75,7 +75,6 @@ Setup Environment Vaiables
 
 ```Make .env file in "backend" folder and store environment Variables
   JWT_SECRET=YOUR_SECRET_TEXT
-  SALT=YOUR_SALT_VALUE
   MONGO_URL=YOUR_DATABASE_URL
   STRIPE_SECRET_KEY=YOUR_KEY
  ```
@@ -125,6 +124,4 @@ The application is deployed on Render.
 Contributions are always welcome!
 Just raise an issue, and we will discuss it.
 
-## Feedback
-
-If you have any feedback, please reach out to me [here](https://www.linkedin.com/in/muhammad-shan-full-stack-developer/)
+ 
